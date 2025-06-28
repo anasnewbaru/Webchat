@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chat - Annas</title>
+  <script type="module" src="chat.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-1/4 bg-gray-800 p-4">
+      <h2 class="text-xl font-bold mb-4">Pengguna</h2>
+      <ul id="userList"></ul>
+    </div>
+
+    <!-- Chat Box -->
+    <div class="flex-1 flex flex-col p-4">
+      <div class="flex-1 overflow-y-auto" id="chatBox"></div>
+      <div class="flex mt-4">
+        <input id="messageInput" placeholder="Ketik pesan..." class="flex-1 p-2 bg-gray-700 rounded-l" />
+        <button id="sendBtn" class="bg-blue-500 px-4 rounded-r hover:bg-blue-600">Kirim</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
